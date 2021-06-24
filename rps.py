@@ -1,20 +1,10 @@
-import random
+from stuff import *
+from error import error_message
 
-rps_choice_list = ['Rock', 'Paper', 'Scissor']
-
-your_choice = input('Choice your RPS: ')
-
-your_choice = your_choice.lower()
-
-computer_random_choice = random.choice(rps_choice_list)
-
-computer_random_choice = computer_random_choice.lower()
-
-if computer_random_choice == 'rock' and your_choice == 'rock':
-    print('Draw')
-else:
-    print('Computer choice is not same as yours')
-
-computer_random_choice = computer_random_choice.title()
-
-print(f'Computer choice was {computer_random_choice}')
+def draw():
+    if your_choice in rps_choice:
+        if your_choice == computer_choice:
+            print('Draw')
+def error():
+    if your_choice not in rps_choice:
+        print('Please don\'t give any unnecessary value')
