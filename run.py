@@ -1,2 +1,2 @@
-from rps import draw
-from rps import error
+from rps import run
+run()
