@@ -15,4 +15,6 @@ if computer_random_choice == 'rock' and your_choice == 'rock':
 else:
     print('Computer choice is not same as yours')
 
+computer_random_choice = computer_random_choice.title()
+
 print(f'Computer choice was {computer_random_choice}')
